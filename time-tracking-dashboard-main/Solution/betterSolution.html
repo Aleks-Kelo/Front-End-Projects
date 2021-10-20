@@ -1,0 +1,237 @@
+<head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 18px;
+      color: white;
+      font-family: "Rubik", sans-serif;
+      font-weight: lighter;
+    }
+
+    body {
+      background-color: hsl(226, 43%, 10%);
+      display: flex;
+    }
+    #mainDiv {
+      margin: auto;
+      width: 70vw;
+      height: 60vh;
+    }
+    table {
+      width: 100%;
+      height: 100%;
+      border: 10px;
+      border-spacing: 20;
+    }
+    td {
+      /* margin: 10px; */
+      padding: 10px;
+      height: 50%;
+      width: 25%;
+      background: lightblue;
+      padding: 0;
+      border-radius: 12px;
+      vertical-align: baseline;
+    }
+
+    td > div {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      border-radius: 12px;
+    }
+    #profile {
+      background-color: hsl(235, 46%, 20%);
+    }
+
+    #profile > div:first-of-type {
+      height: 60%;
+      background-color: hsl(246, 80%, 60%);
+    }
+
+    #profile > div:last-of-type {
+      height: 40%;
+    }
+
+    #profile img {
+      width: 5vw;
+      height: auto;
+      border-radius: 100%;
+      border: 2px solid white;
+    }
+
+    #profile p {
+      font-size: 0.5rem;
+      font-weight: 100;
+      opacity: 0.5;
+      transition: opacity 0.5s ease-out;
+    }
+
+    #timeFrame p:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .backgroundImage {
+      vertical-align: bottom;
+    }
+    .mainDetailsDiv {
+      background-color: hsl(235, 46%, 20%);
+      transition: background-color 0.5s ease-out;
+      height: 75%;
+      display: flex;
+    }
+    .mainDetailsDiv:hover {
+      cursor: pointer;
+      background-color: hsl(235, 46%, 30%);
+    }
+    .mainDetailsDiv div {
+      display: flex;
+      justify-content: space-between;
+    }
+    .mainDetailsDiv div:not(:first-of-type) {
+      opacity: 0.7;
+    }
+    .mainDetailsDiv div:not(:first-of-type):hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    .mainDetailsDiv p {
+      opacity: 0.5;
+      font-size: 0.4rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="mainDiv">
+    <table>
+      <tr>
+        <td id="profile" rowspan="2">
+          <div>
+            <div>
+              <img src="images/image-jeremy.png" alt="Jeremy smiling" />
+            </div>
+            <div>
+              <p>Report for</p>
+              <h3>Jeremy</h3>
+              <h3>Robson</h3>
+            </div>
+          </div>
+          <div id="timeFrame">
+            <p id="daily">Daily</p>
+            <p id="weekly">Weekly</p>
+            <p id="monthly">Monthly</p>
+          </div>
+        </td>
+        <td
+          class="backgroundImage"
+          style="
+            background: url(images/icon-work.svg) top right no-repeat;
+            background-color: hsl(15, 100%, 70%);
+          "
+        >
+          <div class="mainDetailsDiv">
+            <div>
+              <div>Work</div>
+              <div>&bull;&bull;&bull;</div>
+            </div>
+            <h2><span class="current">32</span> Hours</h2>
+            <p>Last Week - <span class="previous">36</span> hours</p>
+          </div>
+        </td>
+        <td
+          class="backgroundImage"
+          style="
+            background: url(images/icon-play.svg) top right no-repeat;
+            background-color: hsl(195, 74%, 62%);
+          "
+        >
+          <div class="mainDetailsDiv">
+            <div>
+              <div>Play</div>
+              <div>&bull;&bull;&bull;</div>
+            </div>
+            <h2><span class="current">32</span> Hours</h2>
+            <p>Last Week - <span class="previous">36</span> hours</p>
+          </div>
+        </td>
+        <td
+          class="backgroundImage"
+          style="
+            background: url(images/icon-study.svg) top right no-repeat;
+            background-color: hsl(348, 100%, 68%);
+          "
+        >
+          <div class="mainDetailsDiv">
+            <div>
+              <div>Study</div>
+              <div>&bull;&bull;&bull;</div>
+            </div>
+            <h2><span class="current">32</span> Hours</h2>
+            <p>Last Week - <span class="previous">36</span> hours</p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="backgroundImage"
+          style="
+            background: url(images/icon-exercise.svg) top right no-repeat;
+            background-color: hsl(145, 58%, 55%);
+          "
+        >
+          <div class="mainDetailsDiv">
+            <div>
+              <div>Exercise</div>
+              <div>&bull;&bull;&bull;</div>
+            </div>
+            <h2><span class="current">32</span> Hours</h2>
+            <p>Last Week - <span class="previous">36</span> hours</p>
+          </div>
+        </td>
+        <td
+          class="backgroundImage"
+          style="
+            background: url(images/icon-social.svg) top right no-repeat;
+            background-color: hsl(264, 64%, 52%);
+          "
+        >
+          <div class="mainDetailsDiv">
+            <div>
+              <div>Social</div>
+              <div>&bull;&bull;&bull;</div>
+            </div>
+            <h2><span class="current">32</span> Hours</h2>
+            <p>Last Week - <span class="previous">36</span> hours</p>
+          </div>
+        </td>
+        <td
+          class="backgroundImage"
+          style="
+            background: url(images/icon-self-care.svg) top right no-repeat;
+            background-color: hsl(43, 84%, 65%);
+          "
+        >
+          <div class="mainDetailsDiv">
+            <div>
+              <div>Self Care</div>
+              <div>&bull;&bull;&bull;</div>
+            </div>
+            <h2><span class="current">32</span> Hours</h2>
+            <p>Last Week - <span class="previous">36</span> hours</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script src="app.js"></script>
+</body>

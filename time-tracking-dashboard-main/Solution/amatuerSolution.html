@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <div id="mainDiv">
+      <div class="Main4Divs">
+        <div id="report">
+          <img src="images/image-jeremy.png" alt="Jeremy" />
+          Report for
+          <span>Jeremy</span>
+          <span style="padding-bottom: 15%"> Robson</span>
+        </div>
+        <div id="timeFrame">
+          <span>Daily</span>
+          <span>Weekly</span>
+          <span>Monthly</span>
+        </div>
+      </div>
+      <div class="Main4Divs">
+        <div class="sectorDiv" id="workDiv">
+          <div
+            style="
+              background: url(images/icon-work.svg) right no-repeat;
+              background-color: hsl(15, 100%, 70%);
+            "
+            class="iconsBackground"
+            id="workBackground"
+          ></div>
+          <div class="mainDivDetails" id="work">
+            <h1>Work</h1>
+            <div style="position: absolute; top: 20%; right: 10%">...</div>
+            <h2>32 Hours</h2>
+          </div>
+        </div>
+        <div class="sectorDiv" id="exerciseDiv">
+          <div
+            style="
+              background: url(images/icon-exercise.svg) right no-repeat;
+              background-color: hsl(145, 58%, 55%);
+            "
+            class="iconsBackground"
+            id="exerciseBackground"
+          ></div>
+          <div class="mainDivDetails" id="exercise">
+            <h1>Exercise</h1>
+          </div>
+        </div>
+      </div>
+      <div class="Main4Divs">
+        <div class="sectorDiv" id="playDiv">
+          <div
+            style="
+              background: url(images/icon-play.svg) right no-repeat;
+              background-color: hsl(195, 74%, 62%);
+            "
+            class="iconsBackground"
+            id="playBackground"
+          ></div>
+          <div class="mainDivDetails" id="play"></div>
+        </div>
+        <div class="sectorDiv" id="socialDiv">
+          <div
+            style="
+              background: url(images/icon-social.svg) right no-repeat;
+              background-color: hsl(264, 64%, 52%);
+            "
+            class="iconsBackground"
+            id="socialBackground"
+          ></div>
+          <div class="mainDivDetails" id="social"></div>
+        </div>
+      </div>
+      <div class="Main4Divs">
+        <div class="sectorDiv" id="studyDiv">
+          <div
+            style="
+              background: url(images/icon-study.svg) right no-repeat;
+              background-color: hsl(348, 100%, 68%);
+            "
+            class="iconsBackground"
+            id="studyBackground"
+          ></div>
+          <div class="mainDivDetails" id="study"></div>
+        </div>
+        <div class="sectorDiv" id="self-careDiv">
+          <div
+            style="
+              background: url(images/icon-self-care.svg) right no-repeat;
+              background-color: hsl(43, 84%, 65%);
+            "
+            class="iconsBackground"
+            id="self-careBackground"
+          ></div>
+          <div class="mainDivDetails" id="self-care"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

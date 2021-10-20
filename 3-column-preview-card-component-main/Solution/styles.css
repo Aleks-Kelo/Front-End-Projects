@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+    
+    
+    
+}
+html{
+    color: white;
+    background-size: contain;
+    
+    height: 100%;
+    
+    
+}
+
+html body{
+    
+    height:100%;
+    width: 100%;
+}
+
+#mainDiv{
+    font-size:1vw;
+    
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 57%;
+    width: 68%;
+    max-width:100%;
+    max-height: 100%;
+    min-width: 40%;
+    min-height: fit-content;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 7px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    
+   
+  
+    
+}
+#sedans,#suv,#luxury{
+    
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+img{
+    margin-bottom: 30px;
+} 
+h1{
+    margin-bottom: 30px;
+}
+button{
+    margin-top: 70px;
+    padding: 13px;
+    border-radius: 30px;
+    background-color: white;
+    border: white solid 4px;
+    
+    
+    
+    
+    
+}
+button:hover{
+    cursor: pointer;
+    color: white!important;
+    
+
+
+}
+
+
+#sedans,#sedans button:hover{
+    background-color: hsl(31, 77%, 52%);
+    
+}
+#sedans button{
+    color:hsl(31, 77%, 52%);
+}
+
+#suv,#suv button:hover{
+   
+    background-color:  hsl(184, 100%, 22%);
+}
+#suv button{
+    color:hsl(184, 100%, 22%); ;
+}
+#luxury button{
+    color:hsl(184, 100%, 22%); ;
+}
+#luxury,#luxury button:hover{
+    
+    background-color: hsl(179, 100%, 13%);
+}
